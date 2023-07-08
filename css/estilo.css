@@ -1,0 +1,299 @@
+
+/* estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:active{
+    
+   color: lightsalmon;
+}
+a:hover{
+    padding: 0.5rem;
+    border: 0.1rem solid brown;
+    background-color: whitesmoke;
+    
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: burlywood;
+    color: brown;
+    
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+    padding: 1.5rem;
+     
+}
+
+nav ul{
+    list-style: none;
+    color: brown;
+    display: flex;
+    gap: 2.5rem;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: brown;
+    font-size: 10px;
+}
+#tamañoletra{
+    font-size: 10px;
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    color: brown;
+    background-color: lightsalmon;
+}
+.conocenos{
+    margin: 2rem 1rem 2rem 1rem;
+}
+/*bootstrap contacto*/
+.tamaño{
+   align-items: center;
+   justify-content: center;
+   display: grid;
+   padding: 0.5rem;
+    
+    
+}
+.color-letra{
+    color: brown;
+    
+    font-family: serif;
+    font-size: medium;
+}
+.form{
+    text-align: center;
+    border: 0.2rem solid whitesmoke;
+    text-transform: uppercase;
+    margin: 2rem 0rem 2rem 0rem;
+    
+}
+.boton{
+    background-color: brown;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    
+}
+.formularios{
+    background-color: brown;
+    border: 0.1rem solid whitesmoke;
+}
+.formularios:hover{
+    background-color: lightsalmon;
+    border: 0.1rem solid whitesmoke;
+}
+.formularios:active{
+    background-color: brown;
+}
+
+/*estilos para HOME*/
+.mainhome {
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 23.5%);
+    gap: 1rem;
+    margin: 0.5rem 1rem 0rem 1rem ;
+}
+.mainhome div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*estilos para PRODUCTOS*/
+/*estilos generales de productos*/
+.mainproductos{
+    margin: 2rem 1rem 2rem 1rem;
+}
+h1{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.mainproductos section .foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*estilo particular seccion macarons*/
+.mainproductos .con1{
+    height: 100vh;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 40%;
+    text-align: justify;
+}
+/*estilo particular seccion mil hojas*/
+.mainproductos .con2{
+    height: 100vh;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 50%;
+    text-align: justify;
+}
+/*estilo particular seccion tiramisu*/
+.mainproductos .con3{
+    height: 100vh;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 40%;
+    text-align: justify;
+}
+/*estilo para RECETAS*/
+.recetas{
+    margin: 2rem 1rem 2rem 1rem;
+}
+/*estilo macarons*/
+h2{
+    text-align: center;
+}
+.recetas{
+    text-align: justify;
+}
+.recetas .macarons{
+    
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: justify;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.recetas .milhojas{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80%;
+    text-align: justify;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.recetas .tiramisu{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    text-align: justify;
+    margin: 1rem 0rem 1rem 0rem;
+}
+/*estilo de fotos para quienes somos*/
+   #carru{
+    display: none;
+    
+   }
+
+/*media query tablet home*/
+@media screen and (min-width:600px) {
+    .mainhome{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 40%);
+    }
+    .mainhome .img4{
+        grid-column: span 3;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+/*media query tablet conocenos*/
+    #logo{
+        display: none;
+    }
+    
+    #carru{
+        display: flex;
+        text-align: center;
+        gap: 1rem;
+        justify-content: center;
+        
+    
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+    .carrusel{
+        display: none;
+    }
+    
+    
+
+/*media query tablet productos*/
+    
+    nav ul li a{
+        font-size: 16px;
+    }
+    .foto{
+        height: 60%;
+    }
+    .mainproductos .con1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 80vh;
+    }
+    .mainproductos .con2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 80vh;
+    }
+    .mainproductos .con3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 80vh;
+    }
+    .recetas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 2fr);
+        
+    }
+    .recetas .tiramisu{
+        grid-column: span 2;
+        margin: 1rem 1rem 1rem 1rem;
+
+    }
+    .recetas .milhojas{
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .recetas .macarons{
+        margin: 1rem 1rem 1rem 1rem; 
+    }
+/*media query tablet contactos*/
+    a{
+        font-size: 16px !important;
+}
+  
+}
+
+/*media query desktop*/
+@media screen and (min-width:1024px) {
+    .mainhome{
+        display: flex;
+        height: 50vh;
+        margin-bottom: 1rem;
+    }
+    
+    #carru div img{
+        display: flex;
+    }
+}
